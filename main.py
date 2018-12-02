@@ -1,2 +1,1 @@
-gygygyg
-priniu
+print ("htji")
