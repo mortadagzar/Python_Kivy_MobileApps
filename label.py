@@ -1,6 +1,5 @@
-name=str(input("enter a name : "))
-checkx=str(input("enter a letter : "))
-x=checkx.upper()
-namex=name.count(checkx)
-print("the given letter is :",namex) 
-
+numberList = [1, 2, 3,7,8,8,8,8]
+strList = ['one', 'two', 'three']
+result=zip(numberList,strList)
+print(result)
+print(set(result))
