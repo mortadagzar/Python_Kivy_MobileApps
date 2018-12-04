@@ -1,1 +1,4 @@
-ghijokpl[kkbjvvb
+from __future__ import print_function
+
+
+print "jhjhjhj"
