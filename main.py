@@ -1,18 +1,19 @@
-print ("**********************************************************")
-class Circle :
-    def  __init__(self,width, height):
-        self.width=width
-        self.height=height
-        x=width*height
-        
+from __future__ import print_function
+from __future__ import standard_library
+standard_library.install_aliases()
+from future.builtins import next
+from future.builtins import object
+import configparser                 # Py3-style import
 
-    def area(self):
-        return self.width * self.height
+class Upper(object):
+    def __init__(self, iterable):
+        self._iter = iter(iterable)
+    def __next__(self):             # Py3-style iterator interface
+        return next(self._iter).upper()
+    def __iter__(self):
+        return self
 
-    def perimeter(self):
-        return 2* (self.width +self.height)
-    
-r1=Circle(10,20)
-print("the area of this is : ",r1.area())
-print("the perimeter(of this is : ",r1.perimeter())
-print(str(r1))
+itr = Upper('hello')
+print(next(itr), end=' ')           # Py3-style print function
+for letter in itr:
+    print(letter, end=' ')
