@@ -1,5 +1,1 @@
-ffdfdf
-cgcgcgcg
-cggcggc
-ggggggc
-ggfgfgfgfgggggggg
+gfgfgfgf
